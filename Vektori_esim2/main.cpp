@@ -42,7 +42,7 @@ int main()
 
     cout<<"Personlistan oliot"<<endl;
     //tulostetaan kaikkien listalla olioiden data
-    for(const Person &objP: personList){
+    for(Person &objP: personList){
         objP.printData();
     }
 

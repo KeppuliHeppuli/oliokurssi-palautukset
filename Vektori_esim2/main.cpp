@@ -42,8 +42,15 @@ int main()
 
     cout<<"Personlistan oliot"<<endl;
     //tulostetaan kaikkien listalla olioiden data
-    for(Person objP: personList){
+    for(const Person &objP: personList){
         objP.printData();
     }
+
+    //tulostetaan ensimmäisen olion data
+    cout<<"Eka olio: ";
+    personList[0].printData();
+
+    cout<<"Listan olioiden maara= "<<personList.size()<<endl
+        ;
     return 0;
 }
